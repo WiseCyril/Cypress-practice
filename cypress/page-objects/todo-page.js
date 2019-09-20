@@ -9,7 +9,7 @@ export function addTodo(todoText) {
 }
 
 export function toggleTodo(todoIndex){
-    cy.get('.todo-list li:nth-child(${todoIndex + 1}) .toggle').click()
+    cy.get(`.todo-list li:nth-child(${todoIndex + 1}) .toggle`).click()
 }
 
 export function showOnlyCompletedTodos(){
